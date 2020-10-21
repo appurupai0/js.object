@@ -33,9 +33,11 @@ function myalert(){
 
 	let trueorfalseSpan = document.getElementById('trueorfalse');
 	if(hantei === true){
-		trueorfalseSpan.textContent = '大丈夫'
+		trueorfalseSpan.textContent = '大丈夫';
+		trueorfalseSpan.style.color = 'yellow';
 	}else{
-		trueorfalseSpan.textContent = 'やり直し'
+		trueorfalseSpan.textContent = 'やり直し';
+		trueorfalseSpan.style.color = 'blue';
 	}
 }
 
