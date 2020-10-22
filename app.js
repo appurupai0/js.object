@@ -34,10 +34,12 @@ function myalert(){
 	let trueorfalseSpan = document.getElementById('trueorfalse');
 	if(hantei === true){
 		trueorfalseSpan.textContent = '大丈夫';
-		trueorfalseSpan.style.color = 'yellow';
+		trueorfalseSpan.style.color = 'green';
+		trueorfalseSpan.style.fontSize = '18px';
 	}else{
 		trueorfalseSpan.textContent = 'やり直し';
-		trueorfalseSpan.style.color = 'blue';
+		trueorfalseSpan.style.color = 'red';
+		trueorfalseSpan.style.fontSize = '24px';
 	}
 }
 
