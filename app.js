@@ -43,3 +43,123 @@ function myalert(){
 	}
 }
 
+
+
+console.log('---------------関数（引数付き）---------------');
+// 関数とは複数の処理を一つにまとめて名前を付けたもの
+// 引数とは処理を行うために必要な情報
+
+// 関数の書き方
+// function 関数名(引数1, 引数2, ...){
+	// 処理
+// }
+
+// alert(表示したい文字)　この場合、表示した文字、　の部分が引数に当たる
+function myalert2(displayMessage){
+	alert(displayMessage);
+}
+
+// 以下の関数を作成して、作成した関数を実行してください。
+
+// 関数名：printHoge
+// 処理内容：「Hoge」　とコンソールに表示する
+ function printHoge(){
+ 	console.log('Hoge');
+ }
+
+ // 作った関数を実行 (コンソールだけの表示は function を抜かした、関数名();で表示可能）よく見ると、htmlのonclickの後に書かれてあるものと同じ
+ printHoge();
+
+
+// 引数ありバージョン
+ // function printHoge(print){
+ // 	console.log(print);
+ // }
+
+ // printHoge('Hoge');
+
+// 関数名：printNum
+// 引数：1つの数値
+// 処理内容：引数で受け取った数値をコンソールに表示する
+ function printNum(number){
+ 	console.log(number);
+ }
+
+ printNum(4);
+
+
+ // 以下の関数を作成して、作成した関数を実行してください。
+
+ 
+// function printKuku(num){この中に繰り返したいfor文や指定を入れる}
+
+  // function printKuku(num){
+  // 	console.log(num * i);
+  // }
+
+  // printKuku(1);
+
+  // for(let = i; i <= 9; i++){
+  // 	console.log(i);
+  // }
+
+function printKuku(num){
+	 let kotae = num * 1;
+		 console.log(kotae);
+		 kotae = num * 2;
+		 console.log(kotae);
+		 kotae = num * 3;
+		 console.log(kotae);
+		 kotae = num * 4;
+		 console.log(kotae);
+		 kotae = num * 5;
+		 console.log(kotae);
+		 kotae = num * 6;
+		 console.log(kotae);
+		 kotae = num * 7;
+		 console.log(kotae);
+		 kotae = num * 8;
+		 console.log(kotae);
+		 kotae = num * 9;
+		 console.log(kotae);
+	// for(let i = 1; i <= 9; i++){
+	// 	console.log( num * i)
+	// }
+}
+
+printKuku(6);
+
+// 関数名：printKakezan
+// 引数：2つの数値
+// 処理内容：引数で受け取った2つの数値の掛け算の答えをコンソールに表示する
+
+function printKakezan(a,b){
+	let kotae = a * b;
+	console.log(`${a}×${b}=${kotae}`);
+}
+
+printKakezan(77,8);
+
+// 関数名：printIsEven
+// 引数：1つの数値
+// 処理内容：引数で受け取った数値が偶数の場合は「偶数です」と出力し、
+// 奇数の場合は「奇数です」と出力する　　出力する＝コンソール表示する
+
+function printIsEven(num){
+	if(num % 2 === 0){
+		console.log(`${num}は偶数です`);
+	}else{
+		console.log(`${num}は奇数です`);
+	}
+}
+
+printIsEven(876545663);
+
+
+function printMessage(message,num){
+	for(let i=1; i <= num; i++){
+		console.log(message);
+	}
+}
+
+printMessage('どら焼き',5);
