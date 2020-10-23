@@ -166,46 +166,74 @@ printMessage('どら焼き',5);
 
 
 // 練習問題
+
+
+// 関数名：printMaxNum
+// 引数1：1つの数値
+// 引数2：1つの数値
+// 処理内容：引数で受け取った2つの数値のうち、最も大きな数値を出力する。
 function printMaxNum(a,b){
 	if(a > b){
 		console.log(a);
-	}else{
+	}else if(a < b){
 		console.log(b);
+	}else{
+		console.log('同じ値')
 	}
 }
 
 printMaxNum(4,1);
 
+
+
+// 関数名：getSquared
+// 引数1：1つの数値
+// 処理内容：引数で受け取った数値の2乗を計算し返す
 function getSquared(num){
-	let result = num*num
-	console.log(result);
+	return num * num;
 }
 
-getSquared(11);
+let result = getSquared(11);
+console.log(result);
 
+
+// 関数名：createSelfIntroductionText
+// 引数1：1つの文字列
+// 処理内容：「私の名前は○○です」という文字の〇〇を引数で受け取った文字列にし返す
 function createSelfIntroductionText(moji){
-	console.log(`私の名前は${moji}です`);
+	return "私の名前は" + (moji) + "です";
 }
 
-createSelfIntroductionText('野比のび太');
+var name = createSelfIntroductionText('野比のび太');
+console.log(name);
 
 
+
+// 関数名：isEvenNumber
+// 引数1：1つの数値
+// 処理内容：引数で渡された値が偶数の場合は true、そうでない場合は false を返す。
 function isEvenNumber(num){
 	if(num % 2 === 0){
-		console.log(`${num}はtrue`);
+		return true;
 	}else{
-		console.log(`${num}はfalse`);
+		return false;
 	}
 }
 
-isEvenNumber(11);
+var anccer = isEvenNumber(11);
+console.log(anccer);
 
+
+// 関数名：isSeedKun
+// 引数1：任意の文字列
+// 処理内容：引数で渡された文字列が「SeedKun」の場合は true、そうでない場合は false を返す。
 function isSeedKun(mojiretu){
-	if(mojiretu === 'SeedKun'){
-		console.log('true');
+	if(mojiretu == 'SeedKun'){
+		return true;
 	}else{
-		console.log('false');
+		return false;
 	}
 }
 
-isSeedKun('Seedkun');
+var kotae = isSeedKun('SeedKun');
+console.log(kotae);
