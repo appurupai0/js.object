@@ -163,3 +163,49 @@ function printMessage(message,num){
 }
 
 printMessage('どら焼き',5);
+
+
+// 練習問題
+function printMaxNum(a,b){
+	if(a > b){
+		console.log(a);
+	}else{
+		console.log(b);
+	}
+}
+
+printMaxNum(4,1);
+
+function getSquared(num){
+	let result = num*num
+	console.log(result);
+}
+
+getSquared(11);
+
+function createSelfIntroductionText(moji){
+	console.log(`私の名前は${moji}です`);
+}
+
+createSelfIntroductionText('野比のび太');
+
+
+function isEvenNumber(num){
+	if(num % 2 === 0){
+		console.log(`${num}はtrue`);
+	}else{
+		console.log(`${num}はfalse`);
+	}
+}
+
+isEvenNumber(11);
+
+function isSeedKun(mojiretu){
+	if(mojiretu === 'SeedKun'){
+		console.log('true');
+	}else{
+		console.log('false');
+	}
+}
+
+isSeedKun('Seedkun');
